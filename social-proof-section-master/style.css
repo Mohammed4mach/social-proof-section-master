@@ -1,0 +1,221 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+.attribution
+{
+    font-size: 11px;
+    text-align: center;
+    margin: 18px auto;
+}
+.attribution a
+{color: hsl(228, 45%, 44%);}
+
+body
+{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: spartan;
+    background-repeat: no-repeat;
+}
+
+.clear {clear:both}
+
+.container .welcomeText h1
+{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.container .welcomeText p 
+{
+    color: hsl(303, 10%, 53%);
+    line-height: 1.6
+}
+
+.container .rate div
+{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 6px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.container .feedback > div
+{
+    background-color: hsl(300, 43%, 22%);
+    padding: 27px;
+    border-radius: 8px;
+}
+/* Styling Content in every feedback */
+.container .feedback div img 
+{
+    float: left;
+    border-radius: 50%;
+    width: 42px;
+    margin-right: 18px
+}
+.container .feedback div .customerName 
+{
+    color: hsl(0, 0%, 100%);
+    margin: 0 0 2px;
+    font-weight: 500
+}
+.container .feedback div .verified 
+{
+    color: hsl(333, 80%, 67%);
+    font-weight: 300
+}
+.container .feedback div .feed 
+{
+    margin: 24px 0 9px;
+    color: hsl(300, 24%, 96%);
+    font-weight: 300;
+    line-height: 1.6
+}
+
+
+/* For Screen min width: 900px */
+@media (min-width: 900px)
+{
+/* Start of Media Query */
+.attribution
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+    
+body{
+    background-image: 
+        url('images/bg-pattern-top-desktop.svg'),
+        url('images/bg-pattern-bottom-desktop.svg');
+    background-position: -15px -1px,
+                        bottom  right ;
+}
+    
+div.container {
+    margin: 10% auto;
+    width: 93%;
+    margin-left: 8.4%
+}
+
+.container .welcomeText 
+{
+    float: left;
+    width: 37%;
+    margin: 0 16.5% 20px 0;
+}
+    
+.container .welcomeText 
+{
+    float: left;
+}
+.container .welcomeText h1 
+{
+    line-height: 0.9;
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.container .rate {float: left;}
+.container .rate div
+{
+    padding: 9px 20px;
+    width: 400px;
+    margin: 0 0 11px;
+    border-radius: 4px;
+}
+/* Stars margins */
+.container .rate div span {margin: 0 15px 0 0;}
+/* Positioning of Second div */
+.container .rate div:nth-of-type(2)
+{
+    position: relative;
+    left: 34px
+}
+/* Positioning of Last div */
+.container .rate div:last-of-type
+{
+    position: relative;
+    left: 68px
+}
+
+.container .feedback {
+    margin: 40px 0;
+    display: flex;
+}
+.container .feedback > div
+{
+    flex-basis: 28%;
+    padding: 27px;
+}
+.container .feedback div:first-of-type ,
+.container .feedback div:nth-of-type(2) {margin: 0 34px 0 0}
+
+.container .feedback > div:nth-of-type(2)
+{
+    position: relative;
+    top: 17px;
+}
+.container .feedback > div:last-of-type
+{
+    position: relative;
+    top: 34px;
+}
+
+/* End of Media Query */    
+}
+
+/* For Screen max width: 910px */
+@media (max-width: 910px)
+{
+/* Start of Media Query */
+body
+{
+    background-image: url('images/bg-pattern-top-mobile.svg');
+    background-position: top 0 left 15px
+}
+
+.container
+{margin: 22% auto;width: 98%;margin-left: 1%}
+
+.container .welcomeText 
+{
+    text-align: center;
+    margin: 0 auto 45px;
+    width: 94%
+}
+.container .welcomeText h1 
+{
+    line-height: 1;
+    font-size: 35px;
+    margin-bottom: 20px
+}
+.container .welcomeText p 
+{
+    color: hsl(303, 10%, 53%);
+    line-height: 1.7;
+    font-weight: 600
+}
+
+.container .rate {text-align: center;margin: 0 0 47px}
+
+.container .rate div
+{
+    margin: 15px auto;
+    padding: 10px;
+    width:90%;
+    line-height: 2
+}
+.container .rate div span {display: block}
+
+.container .feedback {margin: 0 auto;width: 92%}
+.container .feedback > div
+{
+    margin: 0 0 18px
+}
+/* End of Media Query */
+}
